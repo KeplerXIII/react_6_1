@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      <ZoneClock title="Europe/Moscow" />
-      <ZoneClock title="Asia/Tokyo" />
+      <ZoneClock zone="Europe/Moscow" title='Москва'/>
+      <ZoneClock zone="Asia/Tokyo" title='Asia' />
     </>
   )
 }
