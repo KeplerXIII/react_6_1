@@ -5,9 +5,7 @@ import TimezoneForm from './components/timeZoneForm';
 function App() {
 
   return (
-    <>
-     <TimezoneForm/>
-    </>
+        <TimezoneForm />
   )
 }
 

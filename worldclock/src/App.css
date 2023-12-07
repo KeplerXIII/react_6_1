@@ -7,6 +7,9 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .clock {
@@ -18,7 +21,6 @@ body {
   position: relative;
   background: rgba(256, 256, 256, 0.25);
   cursor: pointer;
-  margin-left: 120px;
  }
  @media only screen and (min-width: 768px) and (min-height: 540px) {
   .clock {
@@ -26,7 +28,6 @@ body {
   height: 300px;
   border: solid 15px #333;
   margin: 15px;
-  margin-left: 70px;
   }
  }
  .dot {
