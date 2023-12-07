@@ -3,10 +3,11 @@ import clock from './jsclock'
 
 type clockSet = {
     zone: string,
-    title: string
+    title: string,
+    removeFunc: (zone: string) => void
 }
 
-const ZoneClock: React.FC<clockSet> = ({ zone, title }) => {
+const ZoneClock: React.FC<clockSet> = ({ zone, title, removeFunc }) => {
 
 
     const clockRef = useRef<HTMLDivElement | null>(null)
@@ -17,7 +18,7 @@ const ZoneClock: React.FC<clockSet> = ({ zone, title }) => {
 
     const handleDelete = () => {
         if (clockRef.current) {
-            clockRef.current.remove()
+            removeFunc(zone)
           }
     }
 

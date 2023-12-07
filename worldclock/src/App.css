@@ -124,3 +124,8 @@ body {
  .title {
   font-weight: 600;
  }
+
+ .addBtn {
+  padding: 0px;
+  margin-left: 5px;
+ }
