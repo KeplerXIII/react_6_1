@@ -1,11 +1,11 @@
-import { SetStateAction, useState } from 'react'
+import { useState } from 'react'
 import ZoneClock from './zoneClock'
 
 const TimezoneForm = () => {
-    const [selectedZone, setSelectedZone] = useState('none')
-    const [timezones, setTimezones] = useState([])
+    const [selectedZone, setSelectedZone] = useState<string>('')
+    const [timezones, setTimezones] = useState<string[]>([])
   
-    const handleZoneChange = (event: { target: { value: SetStateAction<string>}}) => {
+    const handleZoneChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
       setSelectedZone(event.target.value)
     };
   

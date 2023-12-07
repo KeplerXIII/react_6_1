@@ -19,7 +19,7 @@ const ZoneClock: React.FC<clockSet> = ({ zone, title, removeFunc }) => {
     const handleDelete = () => {
         if (clockRef.current) {
             removeFunc(zone)
-          }
+        }
     }
 
 

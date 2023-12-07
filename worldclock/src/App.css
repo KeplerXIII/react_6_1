@@ -18,13 +18,15 @@ body {
   position: relative;
   background: rgba(256, 256, 256, 0.25);
   cursor: pointer;
+  margin-left: 120px;
  }
  @media only screen and (min-width: 768px) and (min-height: 540px) {
   .clock {
   width: 300px;
   height: 300px;
   border: solid 15px #333;
-  margin: 10px;
+  margin: 15px;
+  margin-left: 70px;
   }
  }
  .dot {
@@ -127,5 +129,7 @@ body {
 
  .addBtn {
   padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 5px;
  }
